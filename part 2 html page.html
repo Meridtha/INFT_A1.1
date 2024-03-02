@@ -9,6 +9,29 @@
                 document.getElementById('bird').src = imageSrc;
                 document.getElementById('author').innerHTML = description;
             }
+
+            var defaultStyle = true; 
+
+            function toggleTheme() {
+
+                if (defaultStyle === True) {
+                    root.style.setProperty('--primary-color', 'rgb(13, 110, 253)');
+                    root.style.setProperty('--secondary-color', 'rgb(108, 117, 125)');
+                    root.style.setProperty('--bg-color', 'rgb(33, 37, 41)');
+                    root.style.setProperty('--font-color', 'rgb(248, 249, 250)');
+                    root.style.setProperty('--heading-color', 'rgb(255, 255, 255)'); 
+                    defaultStyle = false;
+                } 
+
+                else {
+                    root.style.setProperty('--primary-color', 'rgb(227, 226, 225)');
+                    root.style.setProperty('--secondary-color', 'rgb(247, 105, 105)');
+                    root.style.setProperty('--bg-color', 'rgb(248, 208, 241)');
+                    root.style.setProperty('--font-color', 'rgb(20, 1, 39)');
+                    root.style.setProperty('--heading-color', 'rgb(46, 0, 252)');
+                    defaultStyle = true;
+                }
+            }
         </script>
     </head>
 
@@ -36,7 +59,7 @@
 
             <!-- change theme button -->
             <br>
-            <button id="Change theme"> Change theme</button>
+            <button onclick="toggleTheme()">Toggle Theme</button>
 
         </main>
 
