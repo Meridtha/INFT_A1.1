@@ -1,15 +1,25 @@
 :root {
-    --primary-color: rgb(0, 123, 255);
-    --secondary-color: rgb(255, 193, 7);
-    --bg-color: rgb(248, 249, 250);
-    --font-color: rgb(52, 58, 64);
-    --heading-color: rgb(33, 37, 41);
+    --primary-color: rgb(227, 226, 225);
+    --secondary-color: rgb(247, 105, 105);
+    --bg-color: rgb(248, 208, 241);
+    --font-color: rgb(20, 1, 39);
+    --heading-color: rgb(46, 0, 252);
 }
 
-[data-theme="dark"] {
-    --primary-color: rgb(13, 110, 253);
-    --secondary-color: rgb(108, 117, 125);
-    --bg-color: rgb(33, 37, 41);
-    --font-color: rgb(248, 249, 250);
-    --heading-color: rgb(255, 255, 255);
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+}
+
+p {
+    background-color: var(--secondary-color);
+}
+
+#birdSelect {
+    background-color: var(--secondary-color)
 }

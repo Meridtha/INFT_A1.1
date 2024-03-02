@@ -17,16 +17,22 @@
 
         <!-- This is where our birds selection will be displayed-->
         <main>
+            
             <!-- bird image and author display area-->
-            <img id="bird" src="http://www.outgrabe.net/bird00.jpg">
-            <p id="author">Pardalote by fir0002 (CC-by-NC)</p>
+            <div id="displayArea">
+                <img id="bird" src="http://www.outgrabe.net/bird00.jpg">
+                <p id="author">Pardalote by fir0002 (CC-by-NC)</p>
+            </div>
 
             <!-- buttons for all birds listed -->
-            <button onclick="changeBird('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)');">Pardalote</button>
-            <button onclick="changeBird('http://www.outgrabe.net/bird01.jpg', 'Purple Swamp Hen by Example (License)');">Purple Swamp Hen</button>
-            <button onclick="changeBird('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by Example (License)');">White-headed Stilt</button>
-            <button onclick="changeBird('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Example (License)');">Inland Thornbill</button>
-            <button onclick="changeBird('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by Example (License)');">Rose Robin</button>
+
+            <div id="birdSelect">
+                <button onclick="changeBird('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)');">Pardalote</button>
+                <button onclick="changeBird('http://www.outgrabe.net/bird01.jpg', 'Purple Swamp Hen by Example (License)');">Purple Swamp Hen</button>
+                <button onclick="changeBird('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by Example (License)');">White-headed Stilt</button>
+                <button onclick="changeBird('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Example (License)');">Inland Thornbill</button>
+                <button onclick="changeBird('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by Example (License)');">Rose Robin</button>
+            </div>
 
             <!-- change theme button -->
             <br>
