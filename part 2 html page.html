@@ -4,6 +4,12 @@
         <title>Birds photography collection</title>
         <link rel="stylesheet" href="styles.css">
 
+        <script>
+            function changeBird(imageSrc, description) {
+                document.getElementById('bird').src = imageSrc;
+                document.getElementById('author').innerHTML = description;
+            }
+        </script>
     </head>
 
     <body>
@@ -12,17 +18,18 @@
         <!-- This is where our birds selection will be displayed-->
         <main>
             <!-- bird image and author display area-->
-            <img id="bird" src="http://www.outgrabe.net/bird00.jpg" alt="Pardalote">
+            <img id="bird" src="http://www.outgrabe.net/bird00.jpg">
             <p id="author">Pardalote by fir0002 (CC-by-NC)</p>
 
             <!-- buttons for all birds listed -->
-            <button id="Pardalote"> Pardalote </button>
-            <button id="Purple Swamp Hen"> Purple Swamp Hen </button>
-            <button id="White-headed Stilt"> White-headed Stilt </button>
-            <button id="Inland Thornbill"> Inland Thornbill </button>
-            <button id="Rose Robin"> Rose Robin </button>
+            <button onclick="changeBird('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)');">Pardalote</button>
+            <button onclick="changeBird('http://www.outgrabe.net/bird01.jpg', 'Purple Swamp Hen by Example (License)');">Purple Swamp Hen</button>
+            <button onclick="changeBird('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by Example (License)');">White-headed Stilt</button>
+            <button onclick="changeBird('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Example (License)');">Inland Thornbill</button>
+            <button onclick="changeBird('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by Example (License)');">Rose Robin</button>
 
             <!-- change theme button -->
+            <br>
             <button id="Change theme"> Change theme</button>
 
         </main>
